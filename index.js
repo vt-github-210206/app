@@ -1,2 +1,2 @@
 // hello word
-console.log("hello worold!")
+console.log("hello worold!");
