@@ -16,6 +16,7 @@ Como um lego, voce ira utilizar pecas para criar algoritimos, ou seja, para reso
 - Estrutura de repeticao (for, while)
 
 # Fase da resolucao de um problema
+
 Coleta de dados
 Processar os dados (manipular, alterar ...)
 Apresentar dados
@@ -34,7 +35,8 @@ Apresentar dados
 ## operadores
 
 - [x] Operadores de atribuicao de valor =
-- [x] Operados de contatenacao +
+- [x] Operados de contatenacao  +
+- [x] Operadores de comparacao: == !=  <= >= < >
 
 ## Estruturas de dados:
 
@@ -61,6 +63,7 @@ Apresentar dados
 # condicionais
 
 - [x] switch
+- [x] if/else
 
 ## modulos em node.js:
 
