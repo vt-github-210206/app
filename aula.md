@@ -7,7 +7,7 @@ Como um lego, voce ira utilizar pecas para criar algoritimos, ou seja, para reso
 
 ## Pecas de uma linguagem
 
-- {x} Comentarios 
+- [x] Comentarios 
 - Declaracao de variaves (const, let)
 - Operadores (atribuicao, concatenacao, matematicos, logicos )
 - Tipos de dados (string, number, boolean)
@@ -22,15 +22,34 @@ Apresentar dados
 
 ## Escopo e variaveis:
 
- Variaveis globais e locais
- Constantes
+- [x] Variaveis globais e locais
+- [x] Constantes
 
 ## tipos de dados:
 
-Stringsc(textos): "" '' ``
-Number: 2 1.4
-Function
+- [x] Stringsc(textos): "" '' ``
+- [x] Number: 2 1.4
+- [x] Boolean: true, false
 
 ## operadores
 
-Operadores de atribuicao de valor
+- [x] Operadores de atribuicao de valor =
+- [x] Operados de contatenacao +
+
+## Estruturas de dados:
+
+### Arrays:
+
+- [x] Uma lista que contem qualquer  tipo de dado
+
+### Objetos:
+
+- [x] Atributos e metodos 
+- [x] criacao e manipulacao de objetos 
+- [x] acesso a propriedades de objetos
+
+
+### Functions:
+- [x] criar, passar argumento
+- [x] exercutar
+- [x] arrow function / named function
