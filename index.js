@@ -1,2 +1,8 @@
-// hello word
-console.log("hello worold!");
+// ola, mundo!
+mensagem = "ola eu"
+
+{
+    const mensagem = "ola, mundo!"
+    console.log(mensagem)
+}
+console.log(mensagem);

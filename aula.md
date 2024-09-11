@@ -19,3 +19,18 @@ Como um lego, voce ira utilizar pecas para criar algoritimos, ou seja, para reso
 Coleta de dados
 Processar os dados (manipular, alterar ...)
 Apresentar dados
+
+## Escopo e variaveis:
+
+ Variaveis globais e locais
+ Constantes
+
+## tipos de dados:
+
+Stringsc(textos): "" '' ``
+Number: 2 1.4
+Function
+
+## operadores
+
+Operadores de atribuicao de valor
