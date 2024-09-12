@@ -61,7 +61,7 @@ const metasRealizadas = async () => {
     }
 
     await select({
-        message: "metas realizadas" + realizadas.length,
+        message: "metas realizadas:" + realizadas.length,
         choices: [...realizadas]
     })
 }
@@ -77,15 +77,39 @@ const metasAbertas = async () => {
     }
 
     await select({
-        message: "metas abertas" + abertas.length,
+        message: "metas abertas:" + abertas.length,
         choices: [...abertas]
     })
 }
 
-const start =async () => {
-    
-    while(true){
+const deletarMetas = async () => {
+    const metasDesmarcadas = metas.map((meta) => {
+        return {value: meta.value, checked: false}
+    }) 
 
+    const itensADeletar = await checkbox({
+        mensage: "selecione item para deletar",
+        choices: [...metasDesmarcadas],
+        instructions: false,
+    })
+
+    if(itensADeletar.length == 0) {
+        console.log("nenhum item para deletar!")
+        return
+    }
+
+    itensADeletar.forEach((item) => {
+        metas = metas.filter((meta) => {
+            return meta.value != item
+        })
+    })
+
+    console.log("meta(s) deletada(s) com sucesso!")
+
+        const start = async () => { 
+            
+        while(true){
+ 
         const opcao = await select ({
             mensage: "menu >",
             choices: [
@@ -104,6 +128,10 @@ const start =async () => {
                  {
                     name: "Metas abertas",
                     value: "abertas"
+                 },
+                 {
+                    name: "deletar metas",
+                    value: "deletar"
                  },
                  {
                     name: "Sair",
@@ -126,6 +154,9 @@ const start =async () => {
                 break
             case "abertas":
                 await metasAbertas()
+                break
+            case "deletar":
+                await deletarMetas()
                 break         
             case "sair":
                     console.log("ate a proxima!")
@@ -134,4 +165,4 @@ const start =async () => {
     }
 }
 
-start()
+start()}
